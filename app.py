@@ -26,7 +26,7 @@ PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
 GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 
 
-embeddings = download_hugging_face_embeddings
+embeddings = download_hugging_face_embeddings()
 
   
 pc = Pinecone(api_key=PINECONE_API_KEY)  # Intialize the pinecone
